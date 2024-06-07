@@ -1,0 +1,81 @@
+body
+{
+    background-color: black;
+}
+
+.title
+{
+    color: aliceblue;
+    text-align: center;
+    font-family: "Rammetto One";
+}
+ 
+.box
+{ 
+    position: relative;
+    border: 2px solid wheat;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(182, 182, 182);
+    width: 250px;
+    height: 115px;
+}
+
+p
+{
+    text-align: center;
+}
+
+input
+{
+    width: 200px;
+}
+
+.btns
+{
+    position: static;
+    left: 50%
+}
+
+#ok
+{
+    color: aliceblue;
+    margin-left: 46%;
+    background-color: rgb(37, 37, 255);
+    border-radius: 5px;
+    border: none;
+    height: 25px;
+    width: 50px;
+    cursor: pointer;
+}
+
+#cancel
+{
+    color: aliceblue;
+    background-color: rgb(103, 103, 103);
+    border-radius: 5px;
+    border: none;
+    height: 25px;
+    width: 50px;
+    cursor: pointer;
+}
+
+#ok:hover
+{
+    background-color: rgb(0, 0, 162) ;
+}
+
+#cancel:hover
+{
+    background-color: rgb(56, 56, 56);
+}
+
+#res
+{
+    color: red;
+}
+
+#att
+{
+    color: aliceblue;
+}
