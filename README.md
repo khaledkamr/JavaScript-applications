@@ -11,10 +11,10 @@ This repository contains a series of mini-projects built with JavaScript. Each p
 Here are some of the projects included in this repository:
 
 1. **Project 1: Counter program**
-   - A simple calculator that performs basic arithmetic operations.
+   - A simple program that increment and decrement a number using buttons
 2. **Project 2: Dice roller**
-   - A todo list application that allows users to add, edit, and delete tasks.
+   - An application that simulates rolling a dice, generating random dice values.
 3. **Project 3: Number guessing**
-   - An application that fetches and displays weather information based on the user's location.
+   - A game where the user guesses a number and receives feedback on their guess.
 4. **Project 4: Temperature conversion**
-   - A quiz application that presents multiple-choice questions and provides feedback on answers.
+   - A tool to convert temperatures between different units (Celsius, Fahrenheit).
