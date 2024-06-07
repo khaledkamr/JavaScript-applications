@@ -6,11 +6,11 @@ Welcome to my repository of JavaScript applications! This collection includes va
 
 Here are some of the projects included in this repository:
 
-1. **Project 1: Counter program**
+### 1. **Counter program**
    - A simple program that increment and decrement a number using buttons
-2. **Project 2: Dice roller**
+### 2. **Dice roller**
    - An application that simulates rolling a dice, generating random dice values.
-3. **Project 3: Number guessing**
+### 3. **Number guessing**
    - A game where the user guesses a number and receives feedback on their guess.
-4. **Project 4: Temperature conversion**
+### 4. **Temperature conversion**
    - A tool to convert temperatures between different units (Celsius, Fahrenheit).
