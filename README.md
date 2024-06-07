@@ -2,10 +2,6 @@
 
 Welcome to my repository of JavaScript applications! This collection includes various mini-projects that I developed while studying JavaScript. Each project is designed to demonstrate different concepts and techniques in JavaScript programming.
 
-## About
-
-This repository contains a series of mini-projects built with JavaScript. Each project is intended to highlight different aspects of JavaScript, from basic syntax and DOM manipulation to more complex features such as APIs and asynchronous programming.
-
 ## Projects
 
 Here are some of the projects included in this repository:
