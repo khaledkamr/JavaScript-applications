@@ -48,6 +48,12 @@ ok.onclick = function()
         attempts++;
         tries.textContent = `attempts: ${attempts}`;
     }
+    else if(number > 100 || number < 0)
+    {
+        result.textContent = `Out of range`;
+        attempts++;
+        tries.textContent = `attempts: ${attempts}`;
+    }
     else if(number > answer)
     {
         result.textContent = 'Too high!';
@@ -68,5 +74,5 @@ cancel.onclick = function()
     console.log(answer)
     attempts = 0;
     result.textContent = 'wanna play again?';
-    tries.textContent = `attempts: ${attempts}`;
+    // tries.textContent = `attempts: ${attempts}`;
 }
