@@ -14,7 +14,16 @@ let tries = document.getElementById("att");
 let attempts = 0;
 let number;
 
-ok.onclick = function()
+const input = document.getElementsById('input');
+
+input.addEventListener('keyup', (event) => {
+  if (event.keycode === 13) 
+  {
+    submit();
+  }
+});
+ 
+function submit()
 {
     number = guess.value;
     number = Number(number);
@@ -73,6 +82,7 @@ cancel.onclick = function()
     answer = Math.floor(Math.random() * (max - min + 1));
     console.log(answer)
     attempts = 0;
-    result.textContent = 'wanna play again?';
+    result.textContent = 'play again?';
     // tries.textContent = `attempts: ${attempts}`;
 }
+
