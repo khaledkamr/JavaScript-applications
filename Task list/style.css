@@ -1,0 +1,103 @@
+ 
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+  
+.container form {
+  flex-basis: 100%;
+  display: flex;
+  gap: 10px;
+  background-color: #eee;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.container form .input {
+  flex: 1;
+  height: 30px;
+  border: none;
+  border-radius: 6px;
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+.container form .input:focus {
+  outline: none;
+}
+
+.container form .add {
+  background-color: red;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.container .tasks {
+  background-color: #eee;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.container .tasks div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.container .tasks div button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 3px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.container .tasks div button:hover {
+  background-color: rgb(197, 1, 1);
+}
+
+@keyframes fadeToTransparent {
+  0% {
+    transform: scale(1);
+    background-color: lightgray; 
+  }
+  25% {
+    transform: rotate(1deg) scale(1.05) ;
+    background-color: rgb(253, 104, 104); 
+  }
+  50% {
+    transform: scale(1);
+    background-color: lightgray;
+  }
+  75% {
+    transform: scale(1.05) rotate(-1deg) ;
+    background-color: rgb(253, 104, 104); 
+  }
+  100% {
+    transform: scale(1);
+    background-color: lightgray; 
+  }
+}
+
+.animate {
+  animation: fadeToTransparent 0.5s ease-in-out;
+}
