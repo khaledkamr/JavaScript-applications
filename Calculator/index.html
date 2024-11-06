@@ -10,29 +10,31 @@
         <h1>Calculator</h1>
         <div class="calculator">
             <div class="result">
-                <p class="input">1 + 2</p>
-                <p class="output">3</p>
+                <p class="input" id="input"></p>
+                <p class="output" id="output"></p>
             </div>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button class="del">DEL</button>
-            <button class="ac">AC</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>X</button>
-            <button>/</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>+</button>
-            <button>-</button>
-            <button>0</button>
-            <button>.</button>
+            <button onclick="number(7)">7</button>
+            <button onclick="number(8)">8</button>
+            <button onclick="number(9)">9</button>
+            <button onclick="del()" class="del">DEL</button>
+            <button onclick="ac()" class="ac">AC</button>
+            <button onclick="number(4)">4</button>
+            <button onclick="number(5)">5</button>
+            <button onclick="number(6)">6</button>
+            <button onclick="operator('x')">x</button>
+            <button onclick="operator('/')">/</button>
+            <button onclick="number(1)">1</button>
+            <button onclick="number(2)">2</button>
+            <button onclick="number(3)">3</button>
+            <button onclick="operator('+')">+</button>
+            <button onclick="operator('-')">-</button>
+            <button onclick="number(0)">0</button>
+            <button onclick="number('.')">.</button>
             <button>x10<sup>x</sup></button>
-            <button>Ans</button>
-            <button>=</button>
+            <button onclick="ans()">Ans</button>
+            <button onclick="calc()">=</button>
         </div>
+
+        <script src="js.js"></script>
     </body>
 </html>
