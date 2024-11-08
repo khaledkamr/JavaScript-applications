@@ -7,6 +7,7 @@ let answer = "";
 function number(x) {
   if (output.textContent != "") {
     ex = "";
+    res = 0;
     output.textContent = "";
   }
   ex += `${x}`;
