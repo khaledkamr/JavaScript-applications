@@ -20,12 +20,12 @@ function operator(op) {
 }
 
 function del() {
-  if (ex[ex.length-1] == ' ') {
+  if (ex[ex.length - 1] == " ") {
     ex = ex.slice(0, -2);
   } else {
     ex = ex.slice(0, -1);
   }
-  
+
   input.textContent = ex;
 }
 
@@ -37,6 +37,11 @@ function ac() {
 }
 
 function ans() {
+  if (output.textContent != "") {
+    ex = "";
+    res = 0;
+    output.textContent = "";
+  }
   ex += `${answer}`;
   input.textContent = ex;
 }
@@ -44,47 +49,33 @@ function ans() {
 function calc() {
   let op = "+";
   let x = "";
+  let operators = ["+", "-", "/", "x"];
   for (let i = 0; i < ex.length; i++) {
-    if (ex[i] == "+" || ex[i] == "-" || ex[i] == "/" || ex[i] == "x") {
-      if (
-        ex[i - 1] == "+" ||
-        ex[i - 1] == "-" ||
-        ex[i - 1] == "/" ||
-        ex[i - 1] == "x"
-      ) {
+    if (operators.includes(ex[i])) {
+      if (operators.includes(ex[i - 1])) {
         output.textContent = "Error";
         output.style.fontWeight = "bold";
         return;
       }
 
-      if (op == "+") {
-        res += Number(x);
-      } else if (op == "-") {
-        res -= Number(x);
-      } else if (op == "x") {
-        res *= Number(x);
-      } else if (op == "/") {
-        res /= Number(x);
-      }
-
+      res = calculate(res, Number(x), op);
       op = ex[i];
       x = "";
-    } else if (ex[i] == " ") {
-      continue;
-    } else {
+    } else if (ex[i] !== " ") {
       x += ex[i];
-    }
+    } 
   }
-  if (op == "+") {
-    res += Number(x);
-  } else if (op == "-") {
-    res -= Number(x);
-  } else if (op == "x") {
-    res *= Number(x);
-  } else if (op == "/") {
-    res /= Number(x);
-  }
-
+  res = calculate(res, Number(x), op);
   output.textContent = res;
   answer = res;
+}
+
+function calculate(res, num, operator) {
+  switch (operator) {
+    case "+": return res + num;
+    case "-": return res - num;
+    case "x": return res * num;
+    case "/": return res / num;
+    default: return res;
+  }
 }
