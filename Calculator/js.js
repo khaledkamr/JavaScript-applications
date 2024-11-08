@@ -20,7 +20,12 @@ function operator(op) {
 }
 
 function del() {
-  ex = ex.slice(0, -1);
+  if (ex[ex.length-1] == ' ') {
+    ex = ex.slice(0, -2);
+  } else {
+    ex = ex.slice(0, -1);
+  }
+  
   input.textContent = ex;
 }
 
